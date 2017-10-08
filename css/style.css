@@ -22,19 +22,19 @@ body {
 }
 
 #forecast-1 {
-  display: hidden;
+  display: none;
 }
 
 #forecast-2 {
-  display: hidden;
+  display: none;
 }
 
 #forecast-3 {
-  display: hidden;
+  display: none;
 }
 
 #forecast-4 {
-  display: hidden;
+  display: none;
 }
 
 #time.january {
