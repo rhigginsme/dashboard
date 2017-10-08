@@ -138,7 +138,7 @@
     </div>
     <div id="weather" style="width: 440px; height: 250px; float: left; border-radius: 2px; margin: 2px;"></div>
     <iframe width="512px" height="340px" src="https://app.actiontiles.com/panel/a8d24daf-0de1-449f-ab2f-3a03954d51e3" style="border:none;  border-radius: 2px; background-color: #4caf50; margin: 2px; float: left;"></iframe>
-    <div id="forecast" style="width: 440px; overflow: hidden; height: 340px; float: left; border-radius: 2px; margin: 2px;"></div>
+    <div id="forecast" style="width: 440px; overflow: hidden; height: 340px; float: left; border-radius: 2px; margin: 2px;"><ul><li id="forecast-open-1"><i class="icon-'+weather.forecast[1].code+'">TEST</i></li></div>
   </div>
 </body>
 </html>
