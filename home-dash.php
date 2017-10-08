@@ -19,7 +19,7 @@
   <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.1.0/jquery.simpleWeather.min.js"></script>
   <script>
-  $(document).ready(function() {
+  $(document).ready(function($) {
     $.simpleWeather({
       location: 'Auburn, ME',
       woeid: '',
@@ -98,7 +98,7 @@
     $("#forecast-open-4").click(function() {
       $("#forecast-4").dialog( "open" );
     });
-  });
+  })(jQuery);
   </script>
   <script>
   function startTime() {
