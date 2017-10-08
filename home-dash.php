@@ -26,10 +26,10 @@
         unit: 'f',
         success: function(weather) {
           html = '<h2><i class="icon-'+weather.code+'"></i> '+weather.temp+'&deg;'+weather.units.temp+'</h2>';
-          html += '<ul><li id="forecast-open-1"><i class="icon-'+weather.forecast[1].code+'"></i></li></ul>';
-          html += '<ul><li id="forecast-open-2"><i class="icon-'+weather.forecast[2].code+'"></i></li></ul>';
-          html += '<ul><li id="forecast-open-3"><i class="icon-'+weather.forecast[3].code+'"></i></li></ul>';
-          html += '<ul><li id="forecast-open-4"><i class="icon-'+weather.forecast[4].code+'"></i></li></ul>';
+          html += '<ul><li id="forecast-open-1"><i class="icon-'+weather.forecast[1].code+'"></i></li>';
+          html += '<li id="forecast-open-2"><i class="icon-'+weather.forecast[2].code+'"></i></li>';
+          html += '<li id="forecast-open-3"><i class="icon-'+weather.forecast[3].code+'"></i></li>';
+          html += '<li id="forecast-open-4"><i class="icon-'+weather.forecast[4].code+'"></i></li></ul>';
           html += '<div id="forecast-1"><i class="icon-'+weather.forecast[1].code+'"></i></div>';
           html += '<div id="forecast-2"><i class="icon-'+weather.forecast[2].code+'"></i></div>';
           html += '<div id="forecast-3"><i class="icon-'+weather.forecast[3].code+'"></i></div>';
