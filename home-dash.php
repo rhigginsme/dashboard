@@ -87,16 +87,16 @@
     });
 
     $("#forecast-open-1").click(function() {
-      $("#forecast-1").dialog( "open" );
+      $("#forecast-1").dialog("open");
     });
     $("#forecast-open-2").click(function() {
-      $("#forecast-2").dialog( "open" );
+      $("#forecast-2").dialog("open");
     });
     $("#forecast-open-3").click(function() {
-      $("#forecast-3").dialog( "open" );
+      $("#forecast-3").dialog("open");
     });
     $("#forecast-open-4").click(function() {
-      $("#forecast-4").dialog( "open" );
+      $("#forecast-4").dialog("open");
     });
   });
   </script>
@@ -138,7 +138,7 @@
     </div>
     <div id="weather" style="width: 440px; height: 250px; float: left; border-radius: 2px; margin: 2px;"></div>
     <iframe width="512px" height="340px" src="https://app.actiontiles.com/panel/a8d24daf-0de1-449f-ab2f-3a03954d51e3" style="border:none;  border-radius: 2px; background-color: #4caf50; margin: 2px; float: left;"></iframe>
-    <div id="forecast" style="width: 440px; overflow: hidden; height: 340px; float: left; border-radius: 2px; margin: 2px;"><ul><li id="forecast-open-1">TEST</li></div>
+    <div id="forecast" style="width: 440px; overflow: hidden; height: 340px; float: left; border-radius: 2px; margin: 2px;"></div>
   </div>
 </body>
 </html>
