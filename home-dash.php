@@ -138,7 +138,7 @@
     </div>
     <div id="weather" style="width: 440px; height: 250px; float: left; border-radius: 2px; margin: 2px;"></div>
     <iframe width="512px" height="340px" src="https://app.actiontiles.com/panel/a8d24daf-0de1-449f-ab2f-3a03954d51e3" style="border:none;  border-radius: 2px; background-color: #4caf50; margin: 2px; float: left;"></iframe>
-    <iframe width="440px" height="340px" src="http://www.wcsh6.com" style="border:none;  border-radius: 2px; background-color: #4caf50; margin: 2px; float: left;"></iframe>
+    <iframe src="http://www.zoomforecast.com/zoomradar_weather_map/weather_image_user.php?key=hPJ6lS9uIkoqcV1" width="440" height="340" style="border:none;  border-radius: 2px; background-color: #4caf50; margin: 2px; float: left;"></iframe>
 
   </div>
 </body>
