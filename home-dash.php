@@ -16,6 +16,7 @@
     <base href="/">
     <title>Home Dashboard</title>
     <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.1.0/jquery.simpleWeather.min.js"></script>
     <script>
     $(document).ready(function() {
@@ -25,10 +26,14 @@
         unit: 'f',
         success: function(weather) {
           html = '<h2><i class="icon-'+weather.code+'"></i> '+weather.temp+'&deg;'+weather.units.temp+'</h2>';
-          html += '<ul><li><i class="icon-'+weather.forecast[1].code+'"></i></li></ul>';
-          html += '<ul><li><i class="icon-'+weather.forecast[2].code+'"></i></li></ul>';
-          html += '<ul><li><i class="icon-'+weather.forecast[3].code+'"></i></li></ul>';
-          html += '<ul><li><i class="icon-'+weather.forecast[4].code+'"></i></li></ul>';
+          html += '<ul><li id="forecast-open-1"><i class="icon-'+weather.forecast[1].code+'"></i></li></ul>';
+          html += '<ul><li id="forecast-open-2"><i class="icon-'+weather.forecast[2].code+'"></i></li></ul>';
+          html += '<ul><li id="forecast-open-3"><i class="icon-'+weather.forecast[3].code+'"></i></li></ul>';
+          html += '<ul><li id="forecast-open-4"><i class="icon-'+weather.forecast[4].code+'"></i></li></ul>';
+          html += '<div id="forecast-1"><i class="icon-'+weather.forecast[1].code+'"></i></div>';
+          html += '<div id="forecast-2"><i class="icon-'+weather.forecast[2].code+'"></i></div>';
+          html += '<div id="forecast-3"><i class="icon-'+weather.forecast[3].code+'"></i></div>';
+          html += '<div id="forecast-4"><i class="icon-'+weather.forecast[4].code+'"></i></div>';
           $("#weather").html(html);
         },
         error: function(error) {
@@ -63,6 +68,67 @@
       return i;
     }
     </script>
+<script>
+    $( function() {
+    $( "#forecast-1" ).dialog({
+      autoOpen: false,
+      show: {
+        effect: "blind",
+        duration: 1000
+      },
+      hide: {
+        effect: "explode",
+        duration: 1000
+      }
+    });
+    $( "#forecast-2" ).dialog({
+      autoOpen: false,
+      show: {
+        effect: "blind",
+        duration: 1000
+      },
+      hide: {
+        effect: "explode",
+        duration: 1000
+      }
+    });
+    $( "#forecast-3" ).dialog({
+      autoOpen: false,
+      show: {
+        effect: "blind",
+        duration: 1000
+      },
+      hide: {
+        effect: "explode",
+        duration: 1000
+      }
+    });
+    $( "#forecast-4" ).dialog({
+      autoOpen: false,
+      show: {
+        effect: "blind",
+        duration: 1000
+      },
+      hide: {
+        effect: "explode",
+        duration: 1000
+      }
+    });
+
+    $( "#forecast-open-1" ).on( "click", function() {
+      $( "#forecast-1" ).dialog( "open" );
+    });
+    $( "#forecast-open-2" ).on( "click", function() {
+      $( "#forecast-2" ).dialog( "open" );
+    });
+    $( "#forecast-open-3" ).on( "click", function() {
+      $( "#forecast-3" ).dialog( "open" );
+    });
+    $( "#forecast-open-4" ).on( "click", function() {
+      $( "#forecast-4" ).dialog( "open" );
+    });
+  } );
+  </script>
   </head>
 
   <body onload="startTime()" BGCOLOR="#000000" style="color: #FFF; width: 100%; height: 100%; margin: 0px; padding: 0px; overflow: hidden;" scroll="no">
