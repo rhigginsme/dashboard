@@ -21,6 +21,22 @@ body {
   font: 13px 'Open Sans', "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
+#forecast-1 {
+  display: hidden;
+}
+
+#forecast-2 {
+  display: hidden;
+}
+
+#forecast-3 {
+  display: hidden;
+}
+
+#forecast-4 {
+  display: hidden;
+}
+
 #time.january {
   text-align: center;
   background: #1192d3 url(../assets/january.jpg) no-repeat bottom right;
