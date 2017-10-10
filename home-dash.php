@@ -26,7 +26,7 @@
       woeid: '',
       unit: 'f',
       success: function(weather) {
-        cosole.log('here');
+        console.log('here');
         html = '<i class="icon-'+weather.code+'"></i> '+weather.temp+'&deg;'+weather.units.temp;
         $("#weather > h2").html(html);
         console.log(html);
