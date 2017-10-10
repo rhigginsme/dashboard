@@ -17,8 +17,54 @@ html {
 }
 
 body {
-  padding: 45px 0;
+  background-color: #000;
+  color: #FFF;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
   font: 13px 'Open Sans', "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+#main {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+#time {
+  width: 512px;
+  height: 250px;
+  text-align: center;
+  vertical-align: middle;
+  float: left;
+  border-radius: 2px;
+  margin: 2px;
+}
+
+#weather {
+  width: 440px;
+  height: 250px;
+  float: left;
+  border-radius: 2px;
+  margin: 2px;
+}
+
+#actiontiles {
+  border:none;
+  border-radius: 2px;
+  background-color: #4caf50;
+  margin: 2px;
+  float: left;
+}
+
+#misc {
+  border:none;
+  border-radius: 2px;
+  background-color: #4caf50;
+  margin: 2px;
+  float: left;
 }
 
 .forecast {

@@ -22,15 +22,15 @@
   <script src="dashboard/js/home-dash.js"></script>
 </head>
 
-<body onload="startTime()" style="background-color: #000; color: #FFF; width: 100%; height: 100%; margin: 0px; padding: 0px; overflow: hidden;" scroll="no">
-  <div style="overflow: hidden; width: 100%; height: 100%;">
-    <div id="time" class="<?php print strtolower(date("F")); ?>" style="width: 512px; height: 250px; text-align: center; vertical-align: middle; float: left; border-radius: 2px; margin: 2px;">
-      <div style="padding-top: 45px;">
+<body onload="startTime()">
+  <div id="main">
+    <div id="time" class="<?php print strtolower(date("F")); ?>">
+      <div id="clock-container" style="padding-top: 45px;">
         <div id="clock" style="font-size: 100px;"></div>
-        <div style="font-size: 30px;"><?php print date("l, F d"); ?></div>
+        <div id="time-date" style="font-size: 30px;"><?php print date("l, F d"); ?></div>
       </div>
     </div>
-    <div id="weather" style="width: 440px; height: 250px; float: left; border-radius: 2px; margin: 2px;">
+    <div id="weather">
       <h2></h2>
       <ul>
         <li id="forecast-open-1"></li>
@@ -59,9 +59,8 @@
         <h3 class="temps"></h3>
       </div>
     </div>
-    <iframe width="512px" height="340px" src="https://app.actiontiles.com/panel/a8d24daf-0de1-449f-ab2f-3a03954d51e3" style="border:none;  border-radius: 2px; background-color: #4caf50; margin: 2px; float: left;"></iframe>
-    <iframe src="" width="440" height="340" style="border:none;  border-radius: 2px; background-color: #4caf50; margin: 2px; float: left;"></iframe>
-
+    <iframe id="actiontiles" src="https://app.actiontiles.com/panel/a8d24daf-0de1-449f-ab2f-3a03954d51e3" width="512" height="340"></iframe>
+    <iframe id="misc" src="" width="440" height="340"></iframe>
   </div>
 </body>
 </html>
