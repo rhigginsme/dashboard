@@ -21,14 +21,17 @@
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.1.0/jquery.simpleWeather.min.js"></script>
   <script>
   $(document).ready(function() {
+    alert('here');
     $.simpleWeather({
       location: 'Auburn, ME',
       woeid: '',
       unit: 'f',
       success: function(weather) {
+        alert('hehehehe');
 
         html = '<i class="icon-'+weather.code+'"></i> '+weather.temp+'&deg;'+weather.units.temp;
         $("#weather > h2").html(html);
+        alert(html);
 
         $("#forecast-open-1").html('<i class="icon-'+weather.forecast[1].code+'"></i>');
         $("#forecast-open-2").html('<i class="icon-'+weather.forecast[2].code+'"></i>');
