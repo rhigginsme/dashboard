@@ -26,79 +26,17 @@
       woeid: '',
       unit: 'f',
       success: function(weather) {
-        html = '<h2><i class="icon-'+weather.code+'"></i> '+weather.temp+'&deg;'+weather.units.temp+'</h2>';
-        html += '<ul><li id="forecast-open-1"><i class="icon-'+weather.forecast[1].code+'"></i></li>';
-        html += '<li id="forecast-open-2"><i class="icon-'+weather.forecast[2].code+'"></i></li>';
-        html += '<li id="forecast-open-3"><i class="icon-'+weather.forecast[3].code+'"></i></li>';
-        html += '<li id="forecast-open-4"><i class="icon-'+weather.forecast[4].code+'"></i></li></ul>';
-        html += '<div id="forecast-1"><i class="icon-'+weather.forecast[1].code+'"></i></div>';
-        html += '<div id="forecast-2"><i class="icon-'+weather.forecast[2].code+'"></i></div>';
-        html += '<div id="forecast-3"><i class="icon-'+weather.forecast[3].code+'"></i></div>';
-        html += '<div id="forecast-4"><i class="icon-'+weather.forecast[4].code+'"></i></div>';
-        $("#weather").html(html);
+        html = '<i class="icon-'+weather.code+'"></i> '+weather.temp+'&deg;'+weather.units.temp;
+        $("#weather h2").html(html);
+        $("#forecast-open-1").html('<i class="icon-'+weather.forecast[1].code+'"></i>');
+        $("#forecast-open-2").html('<i class="icon-'+weather.forecast[2].code+'"></i>');
+        $("#forecast-open-3").html('<i class="icon-'+weather.forecast[3].code+'"></i>');
+        $("#forecast-open-4").html('<i class="icon-'+weather.forecast[4].code+'"></i>');
       },
       error: function(error) {
         $("#weather").html('<p>'+error+'</p>');
       }
     });
-
-    $("#forecast-1").dialog({
-      autoOpen: false,
-      show: {
-        effect: "blind",
-        duration: 1000
-      },
-      hide: {
-        effect: "explode",
-        duration: 1000
-      }
-    });
-    $("#forecast-2").dialog({
-      autoOpen: false,
-      show: {
-        effect: "blind",
-        duration: 1000
-      },
-      hide: {
-        effect: "explode",
-        duration: 1000
-      }
-    });
-    $("#forecast-3").dialog({
-      autoOpen: false,
-      show: {
-        effect: "blind",
-        duration: 1000
-      },
-      hide: {
-        effect: "explode",
-        duration: 1000
-      }
-    });
-    $("#forecast-4").dialog({
-      autoOpen: false,
-      show: {
-        effect: "blind",
-        duration: 1000
-      },
-      hide: {
-        effect: "explode",
-        duration: 1000
-      }
-    });
-  });
-
-  $("#forecast-open-1").click(function() {
-    $("#forecast-1").dialog("open");
-  });
-  $("#forecast-open-2").click(function() {
-    $("#forecast-2").dialog("open");
-  });
-  $("#forecast-open-3").click(function() {
-    $("#forecast-3").dialog("open");
-  });
-  $("#forecast-open-4").click(function() {
-    $("#forecast-4").dialog("open");
   });
   </script>
   <script>
@@ -198,7 +136,18 @@
         <div style="font-size: 30px;"><?php print date("l, F d"); ?></div>
       </div>
     </div>
-    <div id="weather" style="width: 440px; height: 250px; float: left; border-radius: 2px; margin: 2px;"></div>
+    <div id="weather" style="width: 440px; height: 250px; float: left; border-radius: 2px; margin: 2px;">
+      <h2></h2>
+      <ul>
+        <li id="forecast-open-1"></li>
+        <li id="forecast-open-2"><i class="icon-'+weather.forecast[2].code+'"></i></li>
+        <li id="forecast-open-3"><i class="icon-'+weather.forecast[3].code+'"></i></li>
+        <li id="forecast-open-4"><i class="icon-'+weather.forecast[4].code+'"></i></li></ul>
+        <div id="forecast-1">test</div>
+        <div id="forecast-2">test</div>
+        <div id="forecast-3">test</div>
+        <div id="forecast-4">test</div>'
+    </div>
     <iframe width="512px" height="340px" src="https://app.actiontiles.com/panel/a8d24daf-0de1-449f-ab2f-3a03954d51e3" style="border:none;  border-radius: 2px; background-color: #4caf50; margin: 2px; float: left;"></iframe>
     <iframe src="http://www.zoomforecast.com/zoomradar_weather_map/weather_image_user.php?key=hPJ6lS9uIkoqcV1" width="440" height="340" style="border:none;  border-radius: 2px; background-color: #4caf50; margin: 2px; float: left;"></iframe>
 
