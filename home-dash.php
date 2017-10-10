@@ -56,8 +56,8 @@
     });
     $("#forecast-1").dialog({
       autoOpen: false,
-      width: 500,
-      height: 350,
+      width: 585,
+      height: 200,
       show: {
         effect: "scale",
         duration: 1000
@@ -67,11 +67,11 @@
         duration: 1000
       }
     }).css("font-size", "20px");
-    
+
     $("#forecast-2").dialog({
       autoOpen: false,
-      width: 500,
-      height: 350,
+      width: 585,
+      height: 200,
       show: {
         effect: "scale",
         duration: 1000
@@ -84,8 +84,8 @@
 
     $("#forecast-3").dialog({
       autoOpen: false,
-      width: 500,
-      height: 350,
+      width: 585,
+      height: 200,
       show: {
         effect: "scale",
         duration: 1000
@@ -98,8 +98,8 @@
 
     $("#forecast-4").dialog({
       autoOpen: false,
-      width: 500,
-      height: 350,
+      width: 585,
+      height: 200,
       show: {
         effect: "scale",
         duration: 1000
@@ -170,23 +170,23 @@
       </ul>
       <div id="forecast-1">
         <div class="forecast"></div>
-        <div class="date"></div>
-        <div class="temps"></div>
+        <h3 class="date"></h3>
+        <h3 class="temps"></h3>
       </div>
       <div id="forecast-2">
         <div class="forecast"></div>
-        <div class="date"></div>
-        <div class="temps"></div>
+        <h3 class="date"></h3>
+        <h3 class="temps"></h3>
       </div>
       <div id="forecast-3">
         <div class="forecast"></div>
-        <div class="date"></div>
-        <div class="temps"></div>
+        <h3 class="date"></h3>
+        <h3 class="temps"></h3>
       </div>
       <div id="forecast-4">
         <div class="forecast"></div>
-        <div class="date"></div>
-        <div class="temps"></div>
+        <h3 class="date"></h3>
+        <h3 class="temps"></h3>
       </div>
     </div>
     <iframe width="512px" height="340px" src="https://app.actiontiles.com/panel/a8d24daf-0de1-449f-ab2f-3a03954d51e3" style="border:none;  border-radius: 2px; background-color: #4caf50; margin: 2px; float: left;"></iframe>
