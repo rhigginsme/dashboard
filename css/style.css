@@ -180,7 +180,7 @@ i {
 .icon-47:before { content: "S"; }
 
 #weather h2 {
-  margin: 0 0 8px;
+  margin: 0 0 0px;
   color: #fff;
   font-size: 100px;
   font-weight: 300;
