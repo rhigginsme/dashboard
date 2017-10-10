@@ -21,6 +21,10 @@ body {
   font: 13px 'Open Sans', "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
+.forecast {
+  float: left;
+}
+
 #forecast-1 {
   display: none;
 }

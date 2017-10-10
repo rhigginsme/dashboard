@@ -66,7 +66,8 @@
         effect: "scale",
         duration: 1000
       }
-    }).css("font-size", "30px");
+    }).css("font-size", "20px");
+    
     $("#forecast-2").dialog({
       autoOpen: false,
       width: 500,
@@ -79,7 +80,8 @@
         effect: "scale",
         duration: 1000
       }
-    }).css("font-size", "30px");
+    }).css("font-size", "20px");
+
     $("#forecast-3").dialog({
       autoOpen: false,
       width: 500,
@@ -92,7 +94,8 @@
         effect: "scale",
         duration: 1000
       }
-    }).css("font-size", "30px");
+    }).css("font-size", "20px");
+
     $("#forecast-4").dialog({
       autoOpen: false,
       width: 500,
@@ -105,7 +108,7 @@
         effect: "scale",
         duration: 1000
       }
-    }).css("font-size", "30px");
+    }).css("font-size", "20px");
 
     $("#forecast-open-1").click(function() {
       $("#forecast-1").dialog("open");
