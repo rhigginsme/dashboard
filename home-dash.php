@@ -123,13 +123,13 @@
       $("#forecast-1").dialog({title: $("#forecast-1").attr('title')}).dialog("open");
     });
     $("#forecast-open-2").click(function() {
-      $("#forecast-2").dialog("open");
+      $("#forecast-1").dialog({title: $("#forecast-2").attr('title')}).dialog("open");
     });
     $("#forecast-open-3").click(function() {
-      $("#forecast-3").dialog("open");
+      $("#forecast-1").dialog({title: $("#forecast-3").attr('title')}).dialog("open");
     });
     $("#forecast-open-4").click(function() {
-      $("#forecast-4").dialog("open");
+      $("#forecast-1").dialog({title: $("#forecast-4").attr('title')}).dialog("open");
     });
   });
   </script>
