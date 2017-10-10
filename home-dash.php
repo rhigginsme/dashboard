@@ -35,6 +35,11 @@
         $("#forecast-open-3").html('<i class="icon-'+weather.forecast[3].code+'"></i>');
         $("#forecast-open-4").html('<i class="icon-'+weather.forecast[4].code+'"></i>');
 
+        $('#yourElementId').prop('title', weather.forecast[1].day+' '+weather.forecast[1].date);
+        $('#yourElementId').prop('title', weather.forecast[2].day+' '+weather.forecast[2].date);
+        $('#yourElementId').prop('title', weather.forecast[3].day+' '+weather.forecast[3].date);
+        $('#yourElementId').prop('title', weather.forecast[4].day+' '+weather.forecast[4].date);
+
         $("#forecast-1 > .date").html(weather.forecast[1].day+': '+weather.forecast[1].text);
         $("#forecast-2 > .date").html(weather.forecast[2].day+': '+weather.forecast[2].text);
         $("#forecast-3 > .date").html(weather.forecast[3].day+': '+weather.forecast[3].text);
@@ -56,7 +61,7 @@
     });
     $("#forecast-1").dialog({
       autoOpen: false,
-      width: 585,
+      width: 550,
       height: 200,
       show: {
         effect: "scale",
@@ -70,7 +75,7 @@
 
     $("#forecast-2").dialog({
       autoOpen: false,
-      width: 585,
+      width: 550,
       height: 200,
       show: {
         effect: "scale",
@@ -84,7 +89,7 @@
 
     $("#forecast-3").dialog({
       autoOpen: false,
-      width: 585,
+      width: 550,
       height: 200,
       show: {
         effect: "scale",
@@ -98,7 +103,7 @@
 
     $("#forecast-4").dialog({
       autoOpen: false,
-      width: 585,
+      width: 550,
       height: 200,
       show: {
         effect: "scale",
