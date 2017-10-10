@@ -32,6 +32,21 @@
         $("#forecast-open-2").html('<i class="icon-'+weather.forecast[2].code+'"></i>');
         $("#forecast-open-3").html('<i class="icon-'+weather.forecast[3].code+'"></i>');
         $("#forecast-open-4").html('<i class="icon-'+weather.forecast[4].code+'"></i>');
+
+        $("#forecast-1 .date").html(weather.forecast[1].day+': '+weather.forecast[1].text);
+        $("#forecast-2 .date").html(weather.forecast[2].day+': '+weather.forecast[2].text);
+        $("#forecast-3 .date").html(weather.forecast[3].day+': '+weather.forecast[3].text);
+        $("#forecast-4 .date").html(weather.forecast[4].day+': '+weather.forecast[4].text);
+
+        $("#forecast-1 .temps").html('Low: '+weather.forecast[1].low+" / High: "+weather.forecast[1].high);
+        $("#forecast-2 .temps").html('Low: '+weather.forecast[2].low+" / High: "+weather.forecast[2].high));
+        $("#forecast-3 .temps").html('Low: '+weather.forecast[3].low+" / High: "+weather.forecast[3].high));
+        $("#forecast-4 .temps").html('Low: '+weather.forecast[4].low+" / High: "+weather.forecast[4].high);
+
+        $("#forecast-1 .forecast").html(weather.forecast[1].thumbnail);
+        $("#forecast-2 .forecast").html(weather.forecast[2].thumbnail);
+        $("#forecast-3 .forecast").html(weather.forecast[3].thumbnail);
+        $("#forecast-4 .forecast").html(weather.forecast[4].thumbnail);
       },
       error: function(error) {
         $("#weather").html('<p>'+error+'</p>');
@@ -143,14 +158,30 @@
         <li id="forecast-open-2"><i class="icon-'+weather.forecast[2].code+'"></i></li>
         <li id="forecast-open-3"><i class="icon-'+weather.forecast[3].code+'"></i></li>
         <li id="forecast-open-4"><i class="icon-'+weather.forecast[4].code+'"></i></li></ul>
-        <div id="forecast-1">test</div>
-        <div id="forecast-2">test</div>
-        <div id="forecast-3">test</div>
-        <div id="forecast-4">test</div>'
-    </div>
-    <iframe width="512px" height="340px" src="https://app.actiontiles.com/panel/a8d24daf-0de1-449f-ab2f-3a03954d51e3" style="border:none;  border-radius: 2px; background-color: #4caf50; margin: 2px; float: left;"></iframe>
-    <iframe src="" width="440" height="340" style="border:none;  border-radius: 2px; background-color: #4caf50; margin: 2px; float: left;"></iframe>
+        <div id="forecast-1">
+          <div class="forecast"></div>
+          <div class="date"></div>
+          <div class="temps"></div>
+        </div>
+        <div id="forecast-2">
+          <div class="forecast"></div>
+          <div class="date"></div>
+          <div class="temps"></div>
+        </div>
+        <div id="forecast-3">
+          <div class="forecast"></div>
+          <div class="date"></div>
+          <div class="temps"></div>
+        </div>
+        <div id="forecast-4">
+          <div class="forecast"></div>
+          <div class="date"></div>
+          <div class="temps"></div>
+        </div>'
+      </div>
+      <iframe width="512px" height="340px" src="https://app.actiontiles.com/panel/a8d24daf-0de1-449f-ab2f-3a03954d51e3" style="border:none;  border-radius: 2px; background-color: #4caf50; margin: 2px; float: left;"></iframe>
+      <iframe src="" width="440" height="340" style="border:none;  border-radius: 2px; background-color: #4caf50; margin: 2px; float: left;"></iframe>
 
-  </div>
-</body>
-</html>
+    </div>
+  </body>
+  </html>
