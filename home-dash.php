@@ -85,19 +85,19 @@
         duration: 1000
       }
     });
+  });
 
-    $("#forecast-open-1").click(function() {
-      $("#forecast-1").dialog("open");
-    });
-    $("#forecast-open-2").click(function() {
-      $("#forecast-2").dialog("open");
-    });
-    $("#forecast-open-3").click(function() {
-      $("#forecast-3").dialog("open");
-    });
-    $("#forecast-open-4").click(function() {
-      $("#forecast-4").dialog("open");
-    });
+  $("#forecast-open-1").click(function() {
+    $("#forecast-1").dialog("open");
+  });
+  $("#forecast-open-2").click(function() {
+    $("#forecast-2").dialog("open");
+  });
+  $("#forecast-open-3").click(function() {
+    $("#forecast-3").dialog("open");
+  });
+  $("#forecast-open-4").click(function() {
+    $("#forecast-4").dialog("open");
   });
   </script>
   <script>
