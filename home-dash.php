@@ -57,44 +57,44 @@
     $("#forecast-1").dialog({
       autoOpen: false,
       show: {
-        effect: "puff",
+        effect: "scale",
         duration: 1000
       },
       hide: {
-        effect: "puff",
+        effect: "scale",
         duration: 1000
       }
     });
     $("#forecast-2").dialog({
       autoOpen: false,
       show: {
-        effect: "puff",
+        effect: "scale",
         duration: 1000
       },
       hide: {
-        effect: "puff",
+        effect: "scale",
         duration: 1000
       }
     });
     $("#forecast-3").dialog({
       autoOpen: false,
       show: {
-        effect: "puff",
+        effect: "scale",
         duration: 1000
       },
       hide: {
-        effect: "puff",
+        effect: "scale",
         duration: 1000
       }
     });
     $("#forecast-4").dialog({
       autoOpen: false,
       show: {
-        effect: "puff",
+        effect: "scale",
         duration: 1000
       },
       hide: {
-        effect: "puff",
+        effect: "scale",
         duration: 1000
       }
     });
