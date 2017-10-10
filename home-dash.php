@@ -26,10 +26,10 @@
       woeid: '',
       unit: 'f',
       success: function(weather) {
-        console.log('here');
+
         html = '<i class="icon-'+weather.code+'"></i> '+weather.temp+'&deg;'+weather.units.temp;
         $("#weather > h2").html(html);
-        console.log(html);
+
         $("#forecast-open-1").html('<i class="icon-'+weather.forecast[1].code+'"></i>');
         $("#forecast-open-2").html('<i class="icon-'+weather.forecast[2].code+'"></i>');
         $("#forecast-open-3").html('<i class="icon-'+weather.forecast[3].code+'"></i>');
@@ -54,10 +54,6 @@
         $("#weather").html('<p>'+error+'</p>');
       }
     });
-  });
-  </script>
-  <script>
-  $(document).ready(function() {
     $("#forecast-1").dialog({
       autoOpen: false,
       show: {
@@ -116,33 +112,34 @@
       $("#forecast-4").dialog("open");
     });
   });
-  </script>
-  <script>
-  function startTime() {
-    var today = new Date();
-    var hh = today.getHours();
-    var m = today.getMinutes();
-    var dd = "AM";
-    var h = hh;
-    if (h >= 12) {
-      h = hh - 12;
-      dd = "PM";
-    }
-    if (h == 0) {
-      h = 12;
-    }
+});
+</script>
+<script>
+function startTime() {
+  var today = new Date();
+  var hh = today.getHours();
+  var m = today.getMinutes();
+  var dd = "AM";
+  var h = hh;
+  if (h >= 12) {
+    h = hh - 12;
+    dd = "PM";
+  }
+  if (h == 0) {
+    h = 12;
+  }
 
-    h = checkTime(h);
-    m = checkTime(m);
-    document.getElementById('clock').innerHTML =
-    h + ":" + m + " " + dd;
-    var t = setTimeout(startTime, 500);
-  }
-  function checkTime(i) {
-    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-    return i;
-  }
-  </script>
+  h = checkTime(h);
+  m = checkTime(m);
+  document.getElementById('clock').innerHTML =
+  h + ":" + m + " " + dd;
+  var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+</script>
 </head>
 
 <body onload="startTime()" BGCOLOR="#000000" style="color: #FFF; width: 100%; height: 100%; margin: 0px; padding: 0px; overflow: hidden;" scroll="no">
