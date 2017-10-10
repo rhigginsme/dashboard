@@ -22,12 +22,12 @@
   <script src="dashboard/js/home-dash.js"></script>
 </head>
 
-<body onload="startTime()">
+<body>
   <div id="main">
     <div id="time" class="<?php print strtolower(date("F")); ?>">
       <div id="clock-container" style="padding-top: 45px;">
-        <div id="clock" style="font-size: 100px;"></div>
-        <div id="time-date" style="font-size: 30px;"><?php print date("l, F d"); ?></div>
+        <div id="clock"></div>
+        <div id="time-date"><?php print date("l, F d"); ?></div>
       </div>
     </div>
     <div id="weather">

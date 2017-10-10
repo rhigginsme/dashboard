@@ -43,6 +43,14 @@ body {
   margin: 2px;
 }
 
+#clock {
+  font-size: 100px;
+}
+
+#time-date {
+  font-size: 30px;
+}
+
 #weather {
   width: 440px;
   height: 250px;

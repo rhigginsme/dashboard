@@ -105,6 +105,8 @@ $(document).ready(function() {
   $("#forecast-open-4").click(function() {
     $("#forecast-1").dialog({title: $("#forecast-4").attr('title')}).dialog("open");
   });
+
+  startTime();
 });
 
 function startTime() {
