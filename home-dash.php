@@ -120,7 +120,7 @@
     }).css("font-size", "20px");
 
     $("#forecast-open-1").click(function() {
-      $("#forecast-2").dialog({title: "mytitle"}).dialog("open");
+      $("#forecast-2").dialog({title: this.title}).dialog("open");
     });
     $("#forecast-open-2").click(function() {
       $("#forecast-2").dialog("open");
