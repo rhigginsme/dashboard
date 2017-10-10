@@ -30,10 +30,10 @@
         html = '<i class="icon-'+weather.code+'"></i> '+weather.temp+'&deg;'+weather.units.temp;
         $("#weather > h2").html(html);
 
-        $("#forecast-open-1").html(weather.forecast[1].code+'<i class="icon-'+weather.forecast[1].code+'"></i>');
-        $("#forecast-open-2").html(weather.forecast[2].code+'<i class="icon-'+weather.forecast[2].code+'"></i>');
-        $("#forecast-open-3").html(weather.forecast[3].code+'<i class="icon-'+weather.forecast[3].code+'"></i>');
-        $("#forecast-open-4").html(weather.forecast[4].code+'<i class="icon-'+weather.forecast[4].code+'"></i>');
+        $("#forecast-open-1").html('<div>'+weather.forecast[1].day+'</div><i class="icon-'+weather.forecast[1].code+'"></i>');
+        $("#forecast-open-2").html('<div>'+weather.forecast[2].day+'</div><i class="icon-'+weather.forecast[2].code+'"></i>');
+        $("#forecast-open-3").html('<div>'+weather.forecast[3].day+'</div><i class="icon-'+weather.forecast[3].code+'"></i>');
+        $("#forecast-open-4").html('<div>'+weather.forecast[4].day+'</div><i class="icon-'+weather.forecast[4].code+'"></i>');
 
         $('#forecast-1').prop('title', weather.forecast[1].day+' '+weather.forecast[1].date);
         $('#forecast-2').prop('title', weather.forecast[2].day+' '+weather.forecast[2].date);
@@ -61,8 +61,9 @@
     });
     $("#forecast-1").dialog({
       autoOpen: false,
-      width: 550,
+      width: 502,
       height: 200,
+      modal: true,
       show: {
         effect: "scale",
         duration: 1000
@@ -75,8 +76,9 @@
 
     $("#forecast-2").dialog({
       autoOpen: false,
-      width: 550,
+      width: 502,
       height: 200,
+      modal: true,
       show: {
         effect: "scale",
         duration: 1000
@@ -89,8 +91,9 @@
 
     $("#forecast-3").dialog({
       autoOpen: false,
-      width: 550,
+      width: 502,
       height: 200,
+      modal: true,
       show: {
         effect: "scale",
         duration: 1000
@@ -103,8 +106,9 @@
 
     $("#forecast-4").dialog({
       autoOpen: false,
-      width: 550,
+      width: 502,
       height: 200,
+      modal: true,
       show: {
         effect: "scale",
         duration: 1000
