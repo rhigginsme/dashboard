@@ -13,6 +13,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.0/themes/blitzer/jquery-ui.css">
   <base href="/">
   <title>Home Dashboard</title>
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
@@ -41,6 +42,67 @@
       }
     });
 
+    $("#forecast-1").dialog({
+      autoOpen: false,
+      show: {
+        effect: "blind",
+        duration: 1000
+      },
+      hide: {
+        effect: "explode",
+        duration: 1000
+      }
+    });
+    $("#forecast-2").dialog({
+      autoOpen: false,
+      show: {
+        effect: "blind",
+        duration: 1000
+      },
+      hide: {
+        effect: "explode",
+        duration: 1000
+      }
+    });
+    $("#forecast-3").dialog({
+      autoOpen: false,
+      show: {
+        effect: "blind",
+        duration: 1000
+      },
+      hide: {
+        effect: "explode",
+        duration: 1000
+      }
+    });
+    $("#forecast-4").dialog({
+      autoOpen: false,
+      show: {
+        effect: "blind",
+        duration: 1000
+      },
+      hide: {
+        effect: "explode",
+        duration: 1000
+      }
+    });
+  });
+
+  $("#forecast-open-1").click(function() {
+    $("#forecast-1").dialog("open");
+  });
+  $("#forecast-open-2").click(function() {
+    $("#forecast-2").dialog("open");
+  });
+  $("#forecast-open-3").click(function() {
+    $("#forecast-3").dialog("open");
+  });
+  $("#forecast-open-4").click(function() {
+    $("#forecast-4").dialog("open");
+  });
+  </script>
+  <script>
+  $(document).ready(function() {
     $("#forecast-1").dialog({
       autoOpen: false,
       show: {
