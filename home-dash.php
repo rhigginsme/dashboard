@@ -26,8 +26,10 @@
       woeid: '',
       unit: 'f',
       success: function(weather) {
+        cosole.log('here');
         html = '<i class="icon-'+weather.code+'"></i> '+weather.temp+'&deg;'+weather.units.temp;
         $("#weather > h2").html(html);
+        console.log(html);
         $("#forecast-open-1").html('<i class="icon-'+weather.forecast[1].code+'"></i>');
         $("#forecast-open-2").html('<i class="icon-'+weather.forecast[2].code+'"></i>');
         $("#forecast-open-3").html('<i class="icon-'+weather.forecast[3].code+'"></i>');
