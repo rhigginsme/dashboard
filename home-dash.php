@@ -63,7 +63,6 @@
       autoOpen: false,
       width: 502,
       height: 200,
-      modal: true,
       show: {
         effect: "scale",
         duration: 1000
@@ -78,7 +77,6 @@
       autoOpen: false,
       width: 502,
       height: 200,
-      modal: true,
       show: {
         effect: "scale",
         duration: 1000
@@ -93,7 +91,6 @@
       autoOpen: false,
       width: 502,
       height: 200,
-      modal: true,
       show: {
         effect: "scale",
         duration: 1000
@@ -108,7 +105,6 @@
       autoOpen: false,
       width: 502,
       height: 200,
-      modal: true,
       show: {
         effect: "scale",
         duration: 1000
