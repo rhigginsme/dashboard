@@ -30,15 +30,15 @@
         html = '<i class="icon-'+weather.code+'"></i> '+weather.temp+'&deg;'+weather.units.temp;
         $("#weather > h2").html(html);
 
-        $("#forecast-open-1").html('<i class="icon-'+weather.forecast[1].code+'"></i>');
-        $("#forecast-open-2").html('<i class="icon-'+weather.forecast[2].code+'"></i>');
-        $("#forecast-open-3").html('<i class="icon-'+weather.forecast[3].code+'"></i>');
-        $("#forecast-open-4").html('<i class="icon-'+weather.forecast[4].code+'"></i>');
+        $("#forecast-open-1").html(weather.forecast[1].code+'<i class="icon-'+weather.forecast[1].code+'"></i>');
+        $("#forecast-open-2").html(weather.forecast[2].code+'<i class="icon-'+weather.forecast[2].code+'"></i>');
+        $("#forecast-open-3").html(weather.forecast[3].code+'<i class="icon-'+weather.forecast[3].code+'"></i>');
+        $("#forecast-open-4").html(weather.forecast[4].code+'<i class="icon-'+weather.forecast[4].code+'"></i>');
 
-        $('#yourElementId').prop('title', weather.forecast[1].day+' '+weather.forecast[1].date);
-        $('#yourElementId').prop('title', weather.forecast[2].day+' '+weather.forecast[2].date);
-        $('#yourElementId').prop('title', weather.forecast[3].day+' '+weather.forecast[3].date);
-        $('#yourElementId').prop('title', weather.forecast[4].day+' '+weather.forecast[4].date);
+        $('#forecast-1').prop('title', weather.forecast[1].day+' '+weather.forecast[1].date);
+        $('#forecast-2').prop('title', weather.forecast[2].day+' '+weather.forecast[2].date);
+        $('#forecast-3').prop('title', weather.forecast[3].day+' '+weather.forecast[3].date);
+        $('#forecast-4').prop('title', weather.forecast[4].day+' '+weather.forecast[4].date);
 
         $("#forecast-1 > .date").html(weather.forecast[1].day+': '+weather.forecast[1].text);
         $("#forecast-2 > .date").html(weather.forecast[2].day+': '+weather.forecast[2].text);
