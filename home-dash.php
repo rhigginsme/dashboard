@@ -177,7 +177,7 @@ function checkTime(i) {
         <div class="forecast"></div>
         <div class="date"></div>
         <div class="temps"></div>
-      </div>'
+      </div>
     </div>
     <iframe width="512px" height="340px" src="https://app.actiontiles.com/panel/a8d24daf-0de1-449f-ab2f-3a03954d51e3" style="border:none;  border-radius: 2px; background-color: #4caf50; margin: 2px; float: left;"></iframe>
     <iframe src="" width="440" height="340" style="border:none;  border-radius: 2px; background-color: #4caf50; margin: 2px; float: left;"></iframe>
