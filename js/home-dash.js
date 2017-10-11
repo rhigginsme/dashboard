@@ -8,6 +8,7 @@ $(document).ready(function() {
       html = '<i class="icon-'+weather.code+'"></i> '+weather.temp+'&deg;'+weather.units.temp;
       $("#weather > h2").html(html);
       console.log(weather);
+      console.log(weather.forecast[2].low);
 
       $("#forecast-open-1").html('<div>'+weather.forecast[1].day+'</div><i class="icon-'+weather.forecast[1].code+'"></i>');
       $("#forecast-open-2").html('<div>'+weather.forecast[2].day+'</div><i class="icon-'+weather.forecast[2].code+'"></i>');
@@ -24,10 +25,10 @@ $(document).ready(function() {
       $("#forecast-3 > .date").html(weather.forecast[3].text);
       $("#forecast-4 > .date").html(weather.forecast[4].text);
 
-      //$("#forecast-1 > .temps").html('Low: '+weather.forecast[1].low+' / High: '+weather.forecast[1].high);
-    //  $("#forecast-2 > .temps").html('Low: '+weather.forecast[2].low+'/ High: '+weather.forecast[2].high);
-    //  $("#forecast-3 > .temps").html('Low: '+weather.forecast[3].low+' / High: '+weather.forecast[3].high);
-    //  $("#forecast-4 > .temps").html('Low: '+weather.forecast[4].low+' / High: '+weather.forecast[4].high);
+      $("#forecast-1 > .temps").html('Low: '+weather.forecast[1].low+' / High: '+weather.forecast[1].high);
+      $("#forecast-2 > .temps").html('Low: '+weather.forecast[2].low+'/ High: '+weather.forecast[2].high);
+      $("#forecast-3 > .temps").html('Low: '+weather.forecast[3].low+' / High: '+weather.forecast[3].high);
+      $("#forecast-4 > .temps").html('Low: '+weather.forecast[4].low+' / High: '+weather.forecast[4].high);
 
       $("#forecast-1 > .forecast").html('<img src="'+weather.forecast[1].image+'"/>');
       $("#forecast-2 > .forecast").html('<img src="'+weather.forecast[2].image+'"/>');
