@@ -8,7 +8,7 @@ $(document).ready(function() {
       html = '<i class="icon-'+weather.code+'"></i> '+weather.temp+'&deg;'+weather.units.temp;
       $("#weather > h2").html(html);
       console.log(weather);
-      console.log(weather.forecast[2].low);
+      console.log(weather.forecast[3].low);
 
       $("#forecast-open-1").html('<div>'+weather.forecast[1].day+'</div><i class="icon-'+weather.forecast[1].code+'"></i>');
       $("#forecast-open-2").html('<div>'+weather.forecast[2].day+'</div><i class="icon-'+weather.forecast[2].code+'"></i>');
