@@ -7,9 +7,6 @@ $(document).ready(function() {
 
       html = '<i class="icon-'+weather.code+'"></i> '+weather.temp+'&deg;'+weather.units.temp;
       $("#weather > h2").html(html);
-      console.log(weather);
-      console.log(weather.forecast[3].low);
-      console.log($("#forecast-3"));
 
       $("#forecast-open-1").html('<div>'+weather.forecast[1].day+'</div><i class="icon-'+weather.forecast[1].code+'"></i>');
       $("#forecast-open-2").html('<div>'+weather.forecast[2].day+'</div><i class="icon-'+weather.forecast[2].code+'"></i>');
@@ -100,13 +97,13 @@ $(document).ready(function() {
     $("#forecast-1").dialog({title: $("#forecast-1").attr('title')}).dialog("open");
   });
   $("#forecast-open-2").click(function() {
-    $("#forecast-1").dialog({title: $("#forecast-2").attr('title')}).dialog("open");
+    $("#forecast-2").dialog({title: $("#forecast-2").attr('title')}).dialog("open");
   });
   $("#forecast-open-3").click(function() {
-    $("#forecast-1").dialog({title: $("#forecast-3").attr('title')}).dialog("open");
+    $("#forecast-3").dialog({title: $("#forecast-3").attr('title')}).dialog("open");
   });
   $("#forecast-open-4").click(function() {
-    $("#forecast-1").dialog({title: $("#forecast-4").attr('title')}).dialog("open");
+    $("#forecast-4").dialog({title: $("#forecast-4").attr('title')}).dialog("open");
   });
 
   startTime();
