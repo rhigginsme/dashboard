@@ -24,7 +24,7 @@ $(document).ready(function() {
       $("#forecast-3 > .date").html(weather.forecast[3].text);
       $("#forecast-4 > .date").html(weather.forecast[4].text);
 
-      $("#forecast-1 > .temps").html('Low: '+weather.forecast[1].low+' / High: '+weather.forecast[1].high);
+      //$("#forecast-1 > .temps").html('Low: '+weather.forecast[1].low+' / High: '+weather.forecast[1].high);
     //  $("#forecast-2 > .temps").html('Low: '+weather.forecast[2].low+'/ High: '+weather.forecast[2].high);
     //  $("#forecast-3 > .temps").html('Low: '+weather.forecast[3].low+' / High: '+weather.forecast[3].high);
     //  $("#forecast-4 > .temps").html('Low: '+weather.forecast[4].low+' / High: '+weather.forecast[4].high);
