@@ -61,11 +61,11 @@
     </div>
     <iframe id="actiontiles" src="https://app.actiontiles.com/panel/a8d24daf-0de1-449f-ab2f-3a03954d51e3" width="512" height="340"></iframe>
     <div id="misc" src="" width="440" height="340">
-      <div id="button-1" class="button"><!--Contents of button. Icone, text, etc...--></div>
-      <div id="button-2" class="button"><!--Contents of button. Icone, text, etc...--></div>
-      <div id="button-3" class="button"><!--Contents of button. Icone, text, etc...--></div>
-      <div id="button-4" class="button"><!--Contents of button. Icone, text, etc...--></div>
-      <div id="popup-1" class="popup"><iframe src="https://app.actiontiles.com/panel/b89a2bb3-9e87-4e46-8954-3dc05ea4be4b"></iframe></div>
+      <div id="button-1" class="button"></div>
+      <div id="button-2" class="button"></div>
+      <div id="button-3" class="button"></div>
+      <div id="button-4" class="button"></div>
+      <div id="popup-1" class="popup"><iframe src="https://app.actiontiles.com/panel/b89a2bb3-9e87-4e46-8954-3dc05ea4be4b" width="900" height="600"></iframe></div>
       <div id="popup-2" class="popup">Add contents here for popup-2</div>
       <div id="popup-3" class="popup">Add contents here for popup-3</div>
       <div id="popup-4" class="popup">Add contents here for popup-4</div>
