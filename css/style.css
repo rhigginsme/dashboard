@@ -84,6 +84,10 @@ body {
   float: left;
 }
 
+.popup .ui-dialog .ui-dialog-content {
+  padding: 0px;
+}
+
 .forecast {
   float: left;
 }
