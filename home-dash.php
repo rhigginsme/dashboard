@@ -61,10 +61,14 @@
     </div>
     <iframe id="actiontiles" src="https://app.actiontiles.com/panel/a8d24daf-0de1-449f-ab2f-3a03954d51e3" width="512" height="340"></iframe>
     <div id="misc" src="" width="440" height="340">
-      <div class="button"></div>
-      <div class="button"></div>
-      <div class="button"></div>
-      <div class="button"></div>
+      <div id="button-1" class="button"></div>
+      <div id="button-2" class="button"></div>
+      <div id="button-3" class="button"></div>
+      <div id="button-4" class="button"></div>
+      <div id="popup-1" class="popup">Add contents here for popup-1</div>
+      <div id="popup-2" class="popup">Add contents here for popup-2</div>
+      <div id="popup-3" class="popup">Add contents here for popup-3</div>
+      <div id="popup-4" class="popup">Add contents here for popup-4</div>
     </div>
   </div>
 </body>
