@@ -60,7 +60,12 @@
       </div>
     </div>
     <iframe id="actiontiles" src="https://app.actiontiles.com/panel/a8d24daf-0de1-449f-ab2f-3a03954d51e3" width="512" height="340"></iframe>
-    <iframe id="misc" src="" width="440" height="340"></iframe>
+    <div id="misc" src="" width="440" height="340">
+      <div id="button-1"></div>
+      <div id="button-1"></div>
+      <div id="button-1"></div>
+      <div id="button-1"></div>  
+    </div>
   </div>
 </body>
 </html>

@@ -70,9 +70,46 @@ body {
 #misc {
   border:none;
   border-radius: 2px;
-  background-color: #4caf50;
   margin: 2px;
   float: left;
+  width: 440px;
+  height: 340px;
+}
+
+#button-1 {
+  width: 216px;
+  height: 166px;
+  border:none;
+  border-radius: 2px;
+  margin: 2px;
+  background-color: #4caf50;
+}
+
+#button-2 {
+  width: 216px;
+  height: 166px;
+  border:none;
+  border-radius: 2px;
+  margin: 2px;
+  background-color: #4caf50;
+}
+
+#button-3 {
+  width: 216px;
+  height: 166px;
+  border:none;
+  border-radius: 2px;
+  margin: 2px;
+  background-color: #4caf50;
+}
+
+#button-4 {
+  width: 216px;
+  height: 166px;
+  border:none;
+  border-radius: 2px;
+  margin: 2px;
+  background-color: #4caf50;
 }
 
 .forecast {
