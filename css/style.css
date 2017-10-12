@@ -83,6 +83,7 @@ body {
   border-radius: 2px;
   margin: 2px;
   background-color: #4caf50;
+  float: left;
 }
 
 #button-2 {
@@ -92,6 +93,7 @@ body {
   border-radius: 2px;
   margin: 2px;
   background-color: #4caf50;
+  float: left;
 }
 
 #button-3 {
@@ -101,6 +103,7 @@ body {
   border-radius: 2px;
   margin: 2px;
   background-color: #4caf50;
+  float: left;
 }
 
 #button-4 {
@@ -110,6 +113,7 @@ body {
   border-radius: 2px;
   margin: 2px;
   background-color: #4caf50;
+  float: left;
 }
 
 .forecast {
