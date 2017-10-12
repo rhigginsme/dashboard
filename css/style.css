@@ -74,37 +74,7 @@ body {
   height: 340px;
 }
 
-#button-1 {
-  width: 216px;
-  height: 166px;
-  border:none;
-  border-radius: 2px;
-  margin: 2px;
-  background-color: #4caf50;
-  float: left;
-}
-
-#button-2 {
-  width: 216px;
-  height: 166px;
-  border:none;
-  border-radius: 2px;
-  margin: 2px;
-  background-color: #4caf50;
-  float: left;
-}
-
-#button-3 {
-  width: 216px;
-  height: 166px;
-  border:none;
-  border-radius: 2px;
-  margin: 2px;
-  background-color: #4caf50;
-  float: left;
-}
-
-#button-4 {
+.button {
   width: 216px;
   height: 166px;
   border:none;
