@@ -65,7 +65,7 @@
       <div id="button-2" class="button"></div>
       <div id="button-3" class="button"></div>
       <div id="button-4" class="button"></div>
-      <div id="popup-1" class="popup"><iframe src="https://app.actiontiles.com/panel/b89a2bb3-9e87-4e46-8954-3dc05ea4be4b" width="850" height="600"></iframe></div>
+      <div id="popup-1" class="popup"><iframe src="https://app.actiontiles.com/panel/b89a2bb3-9e87-4e46-8954-3dc05ea4be4b"></iframe></div>
       <div id="popup-2" class="popup">Add contents here for popup-2</div>
       <div id="popup-3" class="popup">Add contents here for popup-3</div>
       <div id="popup-4" class="popup">Add contents here for popup-4</div>
