@@ -14,13 +14,11 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/ui-darkness/jquery-ui.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <base href="/">
     <title>Home Dashboard</title>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.1.0/jquery.simpleWeather.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="dashboard/js/home-dash.js"></script>
 </head>
 
@@ -64,13 +62,12 @@
     <iframe id="actiontiles" src="https://app.actiontiles.com/panel/a8d24daf-0de1-449f-ab2f-3a03954d51e3" width="512"
             height="340"></iframe>
     <div id="misc" src="" width="440" height="340">
-        <div id="button-1" class="button"><span class="glyphicon glyphicon-calendar"></span> Calendar</div>
+        <div id="button-1" class="button"><img src="/dashboard/assets/calendar1600.png" width="150px"></div>
         <div id="button-2" class="button"></div>
         <div id="button-3" class="button"></div>
         <div id="button-4" class="button"></div>
         <div id="popup-1" class="popup">
-            <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=rsalomon13%40gmail.com&amp;color=%23691426&amp;src=veda36gc8o0golhveoou35bbu0%40group.calendar.google.com&amp;color=%232F6309&amp;src=ga3bhohuqau23o9847btp78qho%40group.calendar.google.com&amp;color=%232952A3&amp;ctz=America%2FNew_York"
-                    style="border-width:0" width="900" height="600" frameborder="0" scrolling="no"></iframe>
+            <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=veda36gc8o0golhveoou35bbu0%40group.calendar.google.com&amp;color=%232F6309&amp;src=ga3bhohuqau23o9847btp78qho%40group.calendar.google.com&amp;color=%232952A3&amp;ctz=America%2FNew_York" style="border-width:0" width="900" height="600" frameborder="0" scrolling="no"></iframe>
         </div>
         <div id="popup-2" class="popup">Add contents here for popup-2</div>
         <div id="popup-3" class="popup">Add contents here for popup-3</div>
