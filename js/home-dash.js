@@ -110,7 +110,7 @@ $(document).ready(function() {
 
   $("#popup-2").dialog({
     autoOpen: false,
-    width: 900,
+    width: 850,
     height: 600,
     show: {
       effect: "scale",
