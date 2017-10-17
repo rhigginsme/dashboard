@@ -71,7 +71,7 @@
         </div>
         <div id="popup-2" class="popup"><iframe src="http://www.zoomforecast.com/zoomradar_weather_map/weather_image_user.php?key=kfUERqzaLyl3eHt" width="800" height="600" style="border:0" frameBorder="0" seamless="seamless" scrolling="no" allowfullscreen="true"></iframe></div>
         <div id="popup-3" class="popup">Add contents here for popup-3</div>
-        <div id="popup-4" class="popup">Add contents here for popup-4</div>
+        <div id="popup-4" class="popup" style="display:none;">Add contents here for popup-4</div>
     </div>
 </div>
 </body>
