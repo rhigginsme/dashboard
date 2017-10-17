@@ -136,20 +136,6 @@ $(document).ready(function() {
     }
   }).css("font-size", "20px");
 
-  $("#popup-4").dialog({
-    autoOpen: false,
-    width: 502,
-    height: 200,
-    show: {
-      effect: "scale",
-      duration: 1000
-    },
-    hide: {
-      effect: "scale",
-      duration: 1000
-    }
-  }).css("font-size", "20px");
-
   $("#forecast-open-1").click(function() {
     $("#forecast-1").dialog({title: $("#forecast-1").attr('title')}).dialog("open");
   });
@@ -171,9 +157,6 @@ $(document).ready(function() {
   });
   $("#button-3").click(function() {
     $("#popup-3").dialog({title: $("#popup-3").attr('title')}).dialog("open");
-  });
-  $("#button-4").click(function() {
-    $("#popup-4").dialog({title: $("#popup-4").attr('title')}).dialog("open");
   });
 
   startTime();
