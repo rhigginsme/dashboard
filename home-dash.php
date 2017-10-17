@@ -69,7 +69,7 @@
         <div id="popup-1" class="popup">
             <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=veda36gc8o0golhveoou35bbu0%40group.calendar.google.com&amp;color=%232F6309&amp;src=ga3bhohuqau23o9847btp78qho%40group.calendar.google.com&amp;color=%232952A3&amp;ctz=America%2FNew_York" style="border-width:0" width="900" height="600" frameborder="0" scrolling="no"></iframe>
         </div>
-        <div id="popup-2" class="popup"><iframe src="http://www.zoomforecast.com/zoomradar_weather_map/weather_image_user.php?key=i3SncpGVg4Tj5qZ" width="900" height="600" style="border:0" frameBorder="0" seamless="seamless" scrolling="no" allowfullscreen="true"></iframe></div>
+        <div id="popup-2" class="popup"><iframe src="http://www.zoomforecast.com/zoomradar_weather_map/weather_image_user.php?key=i3SncpGVg4Tj5qZ" width="800" height="600" style="border:0" frameBorder="0" seamless="seamless" scrolling="no" allowfullscreen="true"></iframe></div>
         <div id="popup-3" class="popup">Add contents here for popup-3</div>
         <div id="popup-4" class="popup">Add contents here for popup-4</div>
     </div>
