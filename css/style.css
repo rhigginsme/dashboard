@@ -197,6 +197,22 @@ body {
     background-size: cover;
 }
 
+#button-1 {
+  background-color: #4caf50;;
+}
+
+#button-2 {
+  background-color: #1192d3;
+}
+
+#button-3 {
+  background-color: #4caf50;
+}
+
+#button-4 {
+  background-color: #1192d3;
+}
+
 i {
     color: #fff;
     font-family: weather;
